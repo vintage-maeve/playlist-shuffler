@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Random Redirect</title>
+  <script>
+    window.onload = function() {
+      const urls = [
+        "https://url1.com",
+        "https://url2.com",
+        "https://url3.com"
+      ];
+      const randomUrl = urls[Math.floor(Math.random() * urls.length)];
+      window.location.href = randomUrl;
+    };
+  </script>
+</head>
+<body>
+  <p>Redirecting...</p>
+</body>
+</html>
